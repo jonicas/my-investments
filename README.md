@@ -54,7 +54,7 @@ As mensagens de commit deve seguir a seguinte estrutura:
 
 ### Solução
 
-A aplicação é estruturada de maneira que regras de negócio fiquem encapsuladas e que novas funcionalides possam ser adicionadas de maneira simples.
+A aplicação é estruturada de maneira que regras de negócio fiquem encapsuladas e que novas funcionalidades possam ser adicionadas de maneira simples.
 
 O componente de mais alto nível (`<App/>`) consiste apenas na arquitetura global da aplicação, onde aplico o sistema de grid padrão sem implementação da lógica do negócio nem estado.
 
