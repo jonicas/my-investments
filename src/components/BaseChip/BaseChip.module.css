@@ -1,0 +1,26 @@
+.BaseChip {
+  background-color: #ededed;
+  color: #777c81;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  outline-color: #777c81;
+}
+
+.BaseChip:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.active {
+  background-color: #c5ddff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #1687fd;
+  outline-color: #1687fd;
+}
+
+.rounded {
+  border-radius: 16px;
+}
