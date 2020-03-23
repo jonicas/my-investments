@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação para acompanhamento de rendimentos de investimentos.
 
-## Available Scripts
+## Scripts
 
-In the project directory, you can run:
+A partir da raiz do projeto, você pode executar os seguintes comandos:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Executa o aplicativo em modo desenvolvimento.<br />
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executa os testes do projeto no modo interativo.<br/>
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prepara a aplicação para o deploy em produção.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Diretrizes para Pull Request
 
-### `npm run eject`
+- O branch `master` contém o último release estável. Todo desenvolvimento deve ser realizado em branchs dedicados.
+- Não adicione as pastas `build` e `node_modules` ao commit.
+- Tenha certeza que os testes estão passando (`npm test`).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Configurações de Desenvolvimento
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Você vai precisar do Node.js versão 8+<br/>
+Depois de clonar o repositório execute o comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+$ npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Fazendo Commits
 
-## Learn More
+As mensagens de commit deve seguir a seguinte estrutura:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+[TIPO]: {Breve descrição do que foi feito}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Tipos: `FEAT`, `BUGFIX`, `DOCS`, `REFACTOR`, `TEST`, `CONFIG`
 
-### Code Splitting
+### Estrutura do Projeto
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- `build`: Pasta que contém os arquivos gerados para distribuição e deploy em produção.
+- `src`: Contém o código fonte da aplicação.
+  - `components`: Contém os componentes que são compartilhados por toda a aplicação.
+  - `screens`: Componentes que não são compartilhados e que aplicam a lógica de negócio.
+  - `utils`: Funções utilitárias para serem compartilhadas por todo o projeto.
