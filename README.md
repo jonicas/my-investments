@@ -51,3 +51,13 @@ As mensagens de commit deve seguir a seguinte estrutura:
   - `components`: Contém os componentes que são compartilhados por toda a aplicação.
   - `screens`: Componentes que não são compartilhados e que aplicam a lógica de negócio.
   - `utils`: Funções utilitárias para serem compartilhadas por todo o projeto.
+
+### Solução
+
+A aplicação é estruturada de maneira que regras de negócio fiquem encapsuladas e que novas funcionalides possam ser adicionadas de maneira simples.
+
+O componente de mais alto nível (`<App/>`) consiste apenas na arquitetura global da aplicação, onde aplico o sistema de grid padrão sem implementação da lógica do negócio nem estado.
+
+Trato cada "tela" como se fosse uma pequena aplicação encapsulada, todos os componentes que implementam a lógica de negócio para uma determindada funcionalidade ficam próximos e de fácil localização. Isso facilita no entendimento geral de como a aplicação está dividida logicamente e deixa a adição de novas funcionalidades mais reprodutível.
+
+Os componentes que não implementam uma regra de negócio específica e que podem ser compartilhados, coloco na pasta `components`, facilitando o reuso e evitando a criação de componentes com a mesma funcionalidade.
